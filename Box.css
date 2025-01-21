@@ -1,0 +1,11 @@
+#jjj{
+    color: rgb(0, 0, 0);
+    border:10px solid red ;
+    padding-left:50px;
+    margin: 50px;
+    box-shadow: 20px 10px 80px 100px crimson;
+    background-color: white;
+}
+body{
+    background-color: black;
+}
