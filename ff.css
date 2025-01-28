@@ -1,0 +1,14 @@
+#flex-container{
+    background-color: crimson;
+    font-size: xx-large;
+   color: white;
+   display: flex;
+   justify-content: left;
+   flex-direction: column-reverse;
+}
+#flexitem{
+    background-color:  rgb(0, 0, 0);
+font-family: cursive;
+width: 80px;
+height: 100px;
+}
