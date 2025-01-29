@@ -1,0 +1,25 @@
+#kkk123{
+    background-color: crimson;
+    font-family: cursive;
+    size: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#kkk{
+    color: azure;
+    background-color: lightskyblue;
+    width: 100px;
+    height: 80px;
+}
+#rrr{
+    color: lightcoral;
+    background-color: gold;
+    width: 100px;
+    height: 80px;
+}
+#ppp{
+    color: cornflowerblue;
+    background-color: greenyellow;
+    width: 100px;
+    height: 80px;
+}
