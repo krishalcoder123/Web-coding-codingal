@@ -1,0 +1,26 @@
+<Html>
+    <head>
+        <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <title>
+            story
+        </title>
+    </head>
+    <body>
+        <h1>Other worldy Enounter</h1>
+        You were sitting on a bed and then you were teleported into another world <br>
+        <button id="btn1" class="btn1" onclick="rock()">Pick up a rock</button> <br>
+        <button id="btn2" class="btn2">Go into the city(Dont Click)</button><br>
+        <button id="btn3" class="btn3" onmouseover="lss()">Try to find a way out of the world</button><br>
+        <script>
+            function rock(){
+                let rocks=document.getElementById("btn1");
+                rocks.innerHTML="Pick up another rock"
+            }
+            function lss(){
+                var lssv=document.getElementById("btn3")
+                lssv.style.backgroundColor="yellow"
+            }
+        </script>
+    </body>
+</Html>
