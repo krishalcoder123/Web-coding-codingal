@@ -1,0 +1,43 @@
+<html>
+<head>
+    <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <title>Document.Bootstaps</title>
+    <style>
+        .container{
+            width:250px;
+            height:150px;
+            border:10px solid crimson;
+        }
+    </style>
+    <title>Document rectange</title>
+</head>
+<body>
+    <h1>RECTANGEL YOU CHANGE USE BOTTON</h1>
+    <div class="container">
+    </div>
+    <div>
+        <button class="btn1" id="Circle" onclick="circle()">Make it to oval</button>
+        <button class="btn2" id="hide" onclick="hide()">Hide</button>
+        <button class="btn3" id="show" onclick="show()">show</button>
+    </div>
+    <script>
+        var didvi=document.querySelector(".container")
+        function hide(){
+           didvi.style.display="none"
+        }
+        function show(){
+           didvi.style.display="block"
+        }
+        function circle(){
+            didvi.style.borderRadius="100%"
+        }
+        didvi.onmouseenter=function(){
+            didvi.style.background="red"
+        }
+        didvi.onmouseout=function(){
+            didvi.style.background="white"
+        }
+    </script>
+</body>
+</html>
