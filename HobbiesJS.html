@@ -1,0 +1,30 @@
+<Html>
+    <head>
+        <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <title>
+            story
+        </title>
+    </head>
+    <body>
+        <h1>My hobbies</h1>
+        Guess my hobbies<br>
+        <button id="btn1" class="btn1" onclick="rock()">Eating pizza,playing different games,reading cpmics</button> <br>
+        <button id="btn2" class="btn2">Eating Burgers,playing zenless zone zero, and wrting</button><br>
+        <button id="btn3" class="btn3" onmouseover="lss()">Going to scchool</button><br>
+        <script>
+            function rock(){
+                let rocks=document.getElementById("btn1");
+                rocks.innerHTML="wrong"
+            }
+            function lss(){
+                var lssv=document.getElementById("btn3")
+                lssv.style.backgroundColor="red"
+            }
+            function rock(){
+                let rocks=document.getElementById("btn2");
+                rocks.innerHTML="Correct!"
+            }
+        </script>
+    </body>
+</Html>
