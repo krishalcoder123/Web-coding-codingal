@@ -2,22 +2,32 @@
 <head>
     <style>
 .container1{
-    background-color:rgba(212, 212, 212, 0.843);
+    background-color:rgb(54, 53, 53);
     width:1320px;
-    height:60px;
+    height:50px;
 }
 nav{
-font-size:xx-large;
-padding: 30px;
+font-size: 40px;
+padding: 20px;
 }
 a{
     text-decoration: none;
-    color:rgb(0, 0, 0);
+    color:crimson;
     margin-left:50px;
-    font-family: monospace;
+    font-family: cursive;
+
 }
 a:hover{
-    background-color:whitesmoke;
+    background-color:rgb(255, 255, 255);
+}
+.Container-carousel{
+    display: flex;
+    justify-content: center;
+}
+.slide1{
+    display: none;
+    height: 500px;
+    width: 500px;
 }
     </style>
     <title>Index</title>
@@ -25,8 +35,29 @@ a:hover{
 <body>
     <Nav class="container1">
         <a href="#">Home</a>
-        <a href="#"> Hobbies,likings and ther thigs</a>
+        <a href="#"> Hobbies,likings and other thigs</a>
         <a href="#"> Contact</a>
     </Nav>
+    <div class="Container-carousel">
+        <img class="slide1" src="MOterBIKEVROOOM.jpeg" alt="NO WORK">
+        <img class="slide1" src="NURVILLETRAHHHH.jpeg" alt="NO WORK">
+    </div>
+    <script>
+        var index=0;
+        function bored(){
+            var kri=document.getElementsByClassName("slide1")
+            var i;
+            for(i=0;i<kri.length;i++ ){
+                kri[i].style.display="none";
+            }
+            index++;
+            if(index>kri.length){
+                index=1;
+            }
+            kri[index-1].style.display="block";
+            setTimeout(bored,3000)
+        }
+        bored();
+    </script>
 </body>
 </html>
